@@ -22,7 +22,7 @@ npm run start
 
 ## Problema 2
 1. Subir la información del mock a MongoDBAtlas.
-2. Utilizando el archivo `src/services/index.js`, cambiar la lógica de `getProducts` para obtener la información de MongoDBAtlas.
+2. Utilizando el archivo `src/services/products.js`, cambiar la lógica de `getProducts` para obtener la información de MongoDBAtlas.
 3. Exponer en la API la información de Products en `/api/products/`.
 
 ## Problema 3 (opcional)
