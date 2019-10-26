@@ -15,6 +15,21 @@ npm install
 npm run start
 ```
 
+### Tests
+```
+npm run test
+```
+
+### Now dev server
+```
+now dev
+```
+
+### Now deploy
+```
+now
+```
+
 ## Problema 1
 1. Utilizando el archivo `.env-example` realiza la configuración para tu archivo `.env`.
 2. Crear tu base de datos en MongoDBAtlas.
