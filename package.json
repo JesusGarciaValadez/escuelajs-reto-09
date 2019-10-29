@@ -46,19 +46,23 @@
   },
   "nyc": {
     "all": true,
+    "cwd": "./src",
     "include": [
       "routes",
       "services",
       "lib",
       "utils"
-    ]
+    ],
+    "nycrc-path": "../.nycrc",
+    "reporter-dir": "./coverage",
+    "temp-dir": "../.nyc_output"
   },
   "scripts": {
     "dev": "DEBUG=app:* nodemon src/index.js",
     "start": "NODE_ENV=production node src/index.js",
     "test": "mocha 'src/test/*.js' --recursive --exit",
     "cover": "nyc npm run test",
-    "report": "nyc report --reporter=html && open coverage/index.html",
+    "report": "nyc report --reporter=html && open ./src/coverage/index.html",
     "format": "prettier --write '{*.js,src/**/*.{js,jsx}}'",
     "lint": "eslint ${PWD}/ --fix"
   },
